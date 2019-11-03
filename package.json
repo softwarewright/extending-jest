@@ -1,0 +1,25 @@
+{
+  "name": "extending-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "jest-chain": "^1.1.2",
+    "jest-expect-message": "^1.0.2",
+    "jest-extended": "^0.11.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-expect-message",
+      "jest-extended",
+      "jest-chain"
+    ]
+  }
+}
